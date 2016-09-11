@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cahier des charges</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- cayman theme -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/cayman.css">
+    <!-- some jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cahier des charges</h1>
+      <h2 class="project-tagline">ScratchJr version web</h2>
+    </section>
+
+    <section class="main-content">
+## Contexte
+
+(Informatique + education => Scratch => ScratchJr)
+
+## ScratchJr
+
+Afin de pouvoir spécifier les fonctionnalités de l'application, il faut se baser sur l'application mobile/tablette et reprendre les mêmes fonctionnalités.
+
+## Wireframing
+
+Afin de représenter de manière plus concrète l'application, des outils de wireframing(mockup) peuvent être utiliser.
+
+## Bibliothèques
+
+Recherche de bibliothèques : blockly et scratch-www.
+
+## Framework web
+
+* Ruby On Rails
+* Python + Django
+* Php (framework obligatoire)
+* Node.js (framework obligatoire, ex : Express.js)
+
+## Outils de développement
+
+IDE, mise à disposition d'une VM, setup des outils, outils de versionning, etc...
+
+## Gestion de projet
+
+Méthode agile (explication + comment on compte appliquer la méthode)
+
+### Outils de gestion de projets
+
+* Trello
+* Slack
+* GitHub
+* ...
+
+    </section>
+    <!-- markdown settings -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.2/showdown.min.js"></script>
+    <script>
+      /*get md content and convert it into html*/
+      var converter = new showdown.Converter(),
+      text = $(".main-content").html(),
+      html = converter.makeHtml(text);
+      // now replace md content by showdown generated html
+      $(".main-content").html(html);
+    </script>
+  </body>
+</html>
