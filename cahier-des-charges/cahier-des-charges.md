@@ -15,15 +15,15 @@ En quoi le projet a une utilité par rapport à l'application existante (seuleme
 ## Bibliothèques (Golda) ~ 1 page
 
 Recherche de bibliothèques : blockly 
-	* front-end
-	* open-source
-	* block => code 
+* front-end
+* open-source
+* block => code 
 scratch-flash
-	* open-source
-	* se baser sur le code original de Scratch
+* open-source
+* se baser sur le code original de Scratch
 snap
-	* plus proche de scratch que blockly
-	* permet le dessin en 2D
+* plus proche de scratch que blockly
+* permet le dessin en 2D
 
 ## Framework web (Antoine) ~ 1 page
 
