@@ -14,11 +14,11 @@ Le projet intégrera bien entendu les fonctionnalités principales du logiciel e
 *	Créer et gérer des projet. 
 Pour pour voir, bien entendu, sauvegarder ses projets et sa progression dans les différents exercices proposés.
 *	La réalisation simple de programme sous forme de blocks.
-Le concept même du logiciel ; permettre de programmer sans écrire une seule ligne de code !
+Le concept même du logiciel, permettre de programmer sans écrire une seule ligne de code !
 *	Un mode « libre », où aucun n’exercice n’est fourni.
 Il est ici possible de créer son propre code, selon ses envies.
 *	L’utilisation de bloques pré-enregistrés.
-Les blocks principaux seront : les déplacements, rotations et arrêt du personnage, ainsi que les boucles et l’affichage de texte à l’écran.
+Les blocks principaux seront : les déplacements, rotations et arrêt du personnage, ainsi que les boucles et l’affichage de texte à l’écran
 ### De nouvelles fonctionnalités inédites !
 *	Un tutoriel rapide d’utilisation.
 Contiendra une explication sur chacun des menus, mais également une liste (consultable à tout moment) des blocks existants avec des explications détaillées sur leurs rôles et utilisations.
