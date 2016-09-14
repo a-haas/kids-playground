@@ -1,14 +1,4 @@
-## Contexte (Charly) ~ 1 page
-
-* (Informatique + education => Scratch => ScratchJr)
-* Les enjeux de ScratchJr
-
-## Pourquoi ScratchJr (Charly) ~ 0,5 page
-
-En quoi le projet a une utilité par rapport à l'application existante (seulement disponible sur tablette et ChromeOS)
-
-## Fonctionnalités (Golda) ~ 1,5 - 2 pages
-
+## Fonctionnalités
 ### Les fonctionnalités déjà existantes
 Le projet intégrera bien entendu les fonctionnalités principales du logiciel existant Scrath Jr, adaptées pour l’utilisation sur ordinateur ;
 *	Créer et gérer des projet. 
@@ -37,50 +27,3 @@ L’objectif ici serait de permettre à l’utilisateur de déclarer ses propres
 Simplement pour les curieux et pour permettre d’habituer les utilisateurs à voir régulièrement (même sans les analyser) des lignes de code simples.
 *	L’utilisation de sprites
 Autoriser l’utilisateur à charger et utiliser ses propres sprites, afin de laisse plus de liberté.
-
-
-## Bibliothèques (Golda) ~ 1 page
-
-Recherche de bibliothèques : blockly 
-* front-end
-* open-source
-* block => code 
-scratch-flash
-* open-source
-* se baser sur le code original de Scratch
-snap
-* plus proche de scratch que blockly
-* permet le dessin en 2D
-
-## Framework web (Antoine) ~ 1 page
-
-* Ruby On Rails
-* Python + Django
-* Php (framework obligatoire)
-* Node.js (framework obligatoire, ex : Express.js)
-
-## Wireframing (Antoine) ~ selon Scratch + ScratchJr
-
-Afin de représenter visuellement de manière plus concrète l'application, des outils de wireframing(mockup) peuvent être utilisés.
-
-Prendre des images de ScratchJr + Scratch
-Voir pour blockly ou snap(différence + possibilité d'implem)
-
-## Outils de développement (Antoine) ~ 0,5 - 1,5 page
-
-IDE, mise à disposition d'une VM, setup des outils, outils de versionning, etc...
-
-## Gestion de projet (Golda) 2 pages
-
-Méthode agile (explication + comment on compte appliquer la méthode)
-
-### Outils de gestion de projets (Charly) 0,5 - 1 page
-
-Explication détaillées de chacun des outils, avantages, inconvénients, comparaison, etc...
-* Trello (outil simple de répartition de tâches permettant l'intégration de slack et github)
-* Slack (outil dédié à la communication, forte personnalisation)
-* GitHub (Possible pour la communication mais beaucoup moins adapté pour la gestion de projet (+ adapté pour des projets à grande échelle))
-* Comparer avec d'autres outils (Trac, Redmine, ...) non utilisé (expliquer les choix)
-* ...
-
-## Bibliographie
