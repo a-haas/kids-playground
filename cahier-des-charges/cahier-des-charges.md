@@ -73,9 +73,31 @@ Afin de représenter visuellement de manière plus concrète l'application, des 
 Prendre des images de ScratchJr + Scratch
 Voir pour blockly ou snap(différence + possibilité d'implem)
 
-## Outils de développement (Antoine) ~ 0,5 - 1,5 page
+## Outils de développement
 
-IDE, mise à disposition d'une VM, setup des outils, outils de versionning, etc...
+Afin d'éviter un maximum les incohérences et les pertes de temps (installation défectueuse, problème de bibliothèque, problème lié à un mauvais formatage des fichiers suite à l'utilisation de système d'exploitation, etc...) la mise en place d'un environnement sera à réaliser. 
+
+### IDE
+
+Il est difficile de réaliser un IDE pour Python, ou tout autre langage dynamique, car cela requiert, dans la plupart des cas l'utilisation de la documentation du code afin de pouvoir proposer une auto-complétion ou une redirection de fichiers (se déplacer d'une instance d'objet à la définition de sa classe). Il est également souvent nécessaire d'installer un plugin spécialisé pour le framework en question. Donc les IDEs sont souvent long à paramétrer, surtout lors de la première utilisation, mais permettent cependant de repérer un certain nombre d'erreur statique, autrement impossible à trouver avec un langage tel que Python, ou alors d'accélérer le développement en utilisant l'auto-complétion. En Python, la référence au niveau IDE est PyCharm qui semble le plus adapté.
+
+Malgré cela les éditeurs de texte sont souvent assez utilisés dans le développement web et sont suffisament puissants pour fournir les outils nécessaires. Sublime Text ou bien Vim sont également une alternative envisageable.
+
+### Machine virtuelle
+
+Pour éviter tout conflit au niveau de la plateforme de développement (incohérence entre Django sur Windows ou sur Linux, par exemple) une machine virtuelle sera a créer, à documenter et à fournir à tous les membres du groupe. L'avantage de ce système est qu'une seule personne du groupe a à se pencher sur l'installation des outils, du framework ou bien encore de la mise en place du serveur, et qu'ainsi les autres membres peuvent commencer à réfléchir à une telle solution.
+
+La machine virtuelle devra donc contenir Python, son outil de packaging (pip, virtualenv, etc...), le framework Django, installation d'un serveur (Nginx), mise en place d'une base de données (Postgresql ou MySql), tous les outils qui sont nécessaires lors d'une connexion ssh (Vim, OpenSsh, autres). A l'aide de la connexion ssh les fichiers pourront donc être modifié depuis l'OS maître et envoyé sur la machine invitée. Le but étant de simuler un vrai serveur localement.
+
+La machine virtuelle sera crée et fourni à l'aide de l'utilitaire VirtualBox qui permet de gérer des machines virtuelles simplement, de gérer une interface réseau entre le maître et l'invité et d'exporter la machine ainsi créée.
+
+### Gestion des versions
+
+Afin de gérer les versions et pouvoir en plus synchroniser les fichiers entre chacun des développeurs, la plateforme GitHub et l'utilisation du logiciel Git sera faite. Le lien du projet GitHub est le suivant [kids-playground].
+
+### Documentation des outils
+
+Une documentation des outils sera réalisé au fur et à mesure, et sera disponible sur GitHub. Elle contiendra les éléments d'installation, en plus d'une explication, de la machine virtuelle, les éléments d'installation de l'IDE ou de l'éditeur de texte en plus de la configuration des plugins. La documentation devra également contenir l'utilisation recommandée de GitHub.
 
 ## Gestion de projet (Golda) 2 pages
 
@@ -93,3 +115,4 @@ Explication détaillées de chacun des outils, avantages, inconvénients, compar
 ## Bibliographie
 
 [link text itself]: https://fr.wikipedia.org/wiki/Ruby_on_Rails
+[kids-playground]: https://github.com/a-haas/kids-playground 
