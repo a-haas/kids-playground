@@ -1,6 +1,12 @@
 ## Contexte (Charly) ~ 1 page
 
-* (Informatique + education => Scratch => ScratchJr)
+### Scratch
+L'informatique prend une place de plus en plus importante dans notre société : on estime que 90% des emplois nécessiteront des compétences numériques d'ici 2020, l'accès à internet est considéré comme une composante de la liberté d'expression, les personnes nées ces dernières décennies sont qualifiées d'enfants du numérique (*digital native*), ... Pourtant, beaucoup de gens ignorent encore comment fonctionne un programme, ce qui limite l'usage qu'ils peuvent faire des outils numériques.
+
+Scratch a été développé par le MIT Media Lab pour combler cette lacune dès l'âge de 7 ans. Disponible gratuitement sur internet, il permet de se familiariser de façon ludique avec les concepts informatiques de base, tout en exprimant sa créativité dans des projets partagés en communauté. L'apprentissage de la programmation développe en outre des compétences plus générales : résolution de problèmes, travail en équipe, approche constructive de l'erreur, recherche d'information, ... Aujourd'hui, Scratch compte plus de 9,5 millions d'utilisateurs, âgés majoritairement de 8 à 16 ans, et est préconisé en France dans le cadre de l'introduction de la programmation à l'école et au collège.
+
+### Scratch Jr
+
 * Les enjeux de ScratchJr
 
 ## Pourquoi ScratchJr (Charly) ~ 0,5 page
