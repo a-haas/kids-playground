@@ -1,4 +1,4 @@
-## Contexte (Charly) ~ 1 page
+## Contexte
 
 ### Scratch
 L'informatique prend une place de plus en plus importante dans notre société : on estime que 90% des emplois nécessiteront des compétences numériques d'ici 2020, l'accès à internet est considéré comme une composante de la liberté d'expression, les personnes nées ces dernières décennies sont qualifiées d'enfants du numérique (*digital native*), ... Pourtant, beaucoup de gens ignorent encore comment fonctionne un programme, ce qui limite l'usage qu'ils peuvent faire des outils numériques.
@@ -9,7 +9,7 @@ Scratch a été développé par le MIT Media Lab pour combler cette lacune dès 
 
 Scratch Jr est né de la volonté de prolonger le succès de Scratch aux enfants de 5 à 7 ans : il en reprend les principes dans une interface simplifiée, basée entièrement sur des icônes, afin que des enfants ne sachant pas lire puissent l'utiliser même sans être accompagnés.
 
-## Pourquoi ScratchJr ? (Charly) ~ 0,5 page
+## Pourquoi Scratch Jr ?
 
 Scratch Jr a été conçu pour être utilisé sur une tablette, et n'est donc porté que sur les systèmes d'exploitation Android, iOS et Chrome OS. Notre objectif est d'élargir son public en développant une version utilisable dans les navigateurs web.
 
@@ -53,12 +53,26 @@ IDE, mise à disposition d'une VM, setup des outils, outils de versionning, etc.
 
 Méthode agile (explication + comment on compte appliquer la méthode)
 
-### Outils de gestion de projets (Charly) 0,5 - 1 page
+### Outils de gestion de projets
 
-Explication détaillées de chacun des outils, avantages, inconvénients, comparaison, etc...
-* Trello (outil simple de répartition de tâches permettant l'intégration de slack et github)
-* Slack (outil dédié à la communication, forte personnalisation)
-* GitHub (Possible pour la communication mais beaucoup moins adapté pour la gestion de projet (+ adapté pour des projets à grande échelle))
+#### Trello
+
+Trello est basé sur une organisation des projets en planches listant des cartes, chacune représentant des tâches, et permet ainsi de répartir des tâches de façon très simple. En outre, il peut être contrôlé depuis une conversation Slack et intégrer une branche GitHub.
+
+#### Slack
+
+Slack est une plate-forme de collaboration en ligne fortement personnalisable. On peut y échanger des messages en privé ou dans des salons de discussion, et elle intègre de nombreux services, dont GitHub et une fonction recherche.
+
+#### GitHub
+
+GitHub est un service alliant l'hébergement de projets de développement avec le logiciel de gestion de versions Git. Fort d'une communauté de plus de 14 millions d'utilisateur, il est particulièrement adapté pour les projets à grande échelle de développement de logiciels libres.
+
+#### Outils non retenus
+
+* Trac est une application de gestion complète de projet par Internet, intégrant également le suivi de problèmes, cependant il ne permet pas facilement d'accéder à une communauté telle que celle de GitHub.
+
+* Redmine est une application de gestion de projets presque complète, mais n'intègre pas les tests unitaires
+
 * Comparer avec d'autres outils (Trac, Redmine, ...) non utilisé (expliquer les choix)
 * ...
 
