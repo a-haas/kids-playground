@@ -1,17 +1,12 @@
 ## Contexte
 
-### Scratch
 L'informatique prend une place de plus en plus importante dans notre société : on estime que 90% des emplois nécessiteront des compétences numériques d'ici 2020, l'accès à internet est considéré comme une composante de la liberté d'expression, les personnes nées ces dernières décennies sont qualifiées d'enfants du numérique (*digital native*), ... Pourtant, beaucoup de gens ignorent encore comment fonctionne un programme, ce qui limite l'usage qu'ils peuvent faire des outils numériques.
 
 Scratch a été développé par le MIT Media Lab pour combler cette lacune dès l'âge de 7 ans. Disponible gratuitement sur internet, il permet de se familiariser de façon ludique avec les concepts informatiques de base, tout en exprimant sa créativité dans des projets partagés en communauté. L'apprentissage de la programmation développe en outre des compétences plus générales : résolution de problèmes, travail en équipe, approche constructive de l'erreur, recherche d'information, ... Aujourd'hui, Scratch compte plus de 10 millions d'utilisateurs, âgés majoritairement de 8 à 16 ans, et est préconisé en France dans le cadre de l'introduction de la programmation à l'école et au collège.
 
-### Scratch Jr
+ScratchJr est né de la volonté de prolonger le succès de Scratch aux enfants de 5 à 7 ans : il en reprend les principes dans une interface simplifiée, basée entièrement sur des icônes, afin que des enfants ne sachant pas lire puissent l'utiliser même sans être accompagnés.
 
-Scratch Jr est né de la volonté de prolonger le succès de Scratch aux enfants de 5 à 7 ans : il en reprend les principes dans une interface simplifiée, basée entièrement sur des icônes, afin que des enfants ne sachant pas lire puissent l'utiliser même sans être accompagnés.
-
-## Pourquoi Scratch Jr ?
-
-Scratch Jr a été conçu pour être utilisé sur une tablette, et n'est donc porté que sur les systèmes d'exploitation Android, iOS et Chrome OS. Notre objectif est d'élargir son public en développant une version utilisable dans les navigateurs web.
+ScratchJr est conçu pour une utilisation tablette, et n'est donc porté que sur les systèmes d'exploitation Android, iOS et Chrome OS. Notre objectif est d'élargir son public en développant une version utilisable dans les navigateurs web.
 
 ## Fonctionnalités (Golda) ~ 1,5 - 2 pages
 
@@ -111,28 +106,19 @@ Méthode agile (explication + comment on compte appliquer la méthode)
 
 ### Outils de gestion de projets
 
-#### Trello
-
-Trello est basé sur une organisation des projets en planches listant des cartes, chacune représentant des tâches, et permet ainsi de répartir des tâches de façon très simple. En outre, il peut être contrôlé depuis une conversation Slack et intégrer une branche GitHub.
-
-#### Slack
-
-Slack est une plate-forme de collaboration en ligne fortement personnalisable. On peut y échanger des messages en privé ou dans des salons de discussion, et elle intègre de nombreux services, dont GitHub et une fonction recherche.
-
-#### GitHub
-
-GitHub est un service alliant l'hébergement de projets de développement avec le logiciel de gestion de versions Git. Fort d'une communauté de plus de 14 millions d'utilisateur, il est particulièrement adapté pour les projets à grande échelle de développement de logiciels libres.
-
-#### Outils non retenus
-
+*Trello est basé sur une organisation des projets en planches listant des cartes, chacune représentant des tâches, et permet ainsi de répartir des tâches de façon très simple. En outre, il peut être contrôlé depuis une conversation Slack et intégrer une branche GitHub.
+*Slack est une plate-forme de collaboration en ligne fortement personnalisable. On peut y échanger des messages en privé ou dans des salons de discussion, et elle intègre de nombreux services, dont GitHub et une fonction recherche.
+*GitHub est un service alliant l'hébergement de projets de développement avec le logiciel de gestion de versions Git. Fort d'une communauté de plus de 14 millions d'utilisateur, il est particulièrement adapté pour les projets à grande échelle de développement de logiciels libres.
 * Trac est une application de gestion complète de projet par Internet, intégrant également le suivi de problèmes, cependant il ne permet pas facilement d'accéder à une communauté telle que celle de GitHub.
-
 * Redmine est une application de gestion de projets presque complète, mais n'intègre pas les tests unitaires
 
-* Comparer avec d'autres outils (Trac, Redmine, ...) non utilisé (expliquer les choix)
-* ...
+### Outils retenus
 
-## Bibliographie
+GitHub peut être utilisé en tant qu'outil de gestion de projets grâce au système des issues qui permet la demande de fonctionnalités ou de correction de bug. Cependant ce système est adéquat lors d'un développement à échelle nationale voir internationale, tel que les systèmes open-source, mais pas pour un projet de cette taille, en plus de rajouter de complexité dans la gestion, car les issues ne présente pas le plan entier de développement.
 
-[link text itself]: https://fr.wikipedia.org/wiki/Ruby_on_Rails
+Trac et Redmine sont deux outils de gestion de projets complets mais l'utilisation de ces outils sont inadaptés pour le travail, sur un seul projet, d'une petite équipe. Ces outils sont plutôt à l'usage des entreprises qui veulent pouvoir avoir une grande visibilité sur le projet, temps d'avancement, temps prévisionnel / temps requis pour tâche, etc... Ainsi l'outil est même trop complet pour notre utilisation.
+Le bénéfice de travailler avec un outil de gestion de projet complet ne semble donc pas le plus adapté car pour une équipe de trois personnes, une répartition des tâche en utilisant Trello et une discussion Slack afin de se synchroniser sur les différents objectifs, est largement suffisant, en plus des meetings réguliers.
+
+## Liens utiles
+
 [kids-playground]: https://github.com/a-haas/kids-playground 
