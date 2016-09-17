@@ -106,9 +106,9 @@ Méthode agile (explication + comment on compte appliquer la méthode)
 
 ### Outils de gestion de projets
 
-*Trello est basé sur une organisation des projets en planches listant des cartes, chacune représentant des tâches, et permet ainsi de répartir des tâches de façon très simple. En outre, il peut être contrôlé depuis une conversation Slack et intégrer une branche GitHub.
-*Slack est une plate-forme de collaboration en ligne fortement personnalisable. On peut y échanger des messages en privé ou dans des salons de discussion, et elle intègre de nombreux services, dont GitHub et une fonction recherche.
-*GitHub est un service alliant l'hébergement de projets de développement avec le logiciel de gestion de versions Git. Fort d'une communauté de plus de 14 millions d'utilisateur, il est particulièrement adapté pour les projets à grande échelle de développement de logiciels libres.
+* Trello est basé sur une organisation des projets en planches listant des cartes, chacune représentant des tâches, et permet ainsi de répartir des tâches de façon très simple. En outre, il peut être contrôlé depuis une conversation Slack et intégrer une branche GitHub.
+* Slack est une plate-forme de collaboration en ligne fortement personnalisable. On peut y échanger des messages en privé ou dans des salons de discussion, et elle intègre de nombreux services, dont GitHub et une fonction recherche.
+* GitHub est un service alliant l'hébergement de projets de développement avec le logiciel de gestion de versions Git. Fort d'une communauté de plus de 14 millions d'utilisateur, il est particulièrement adapté pour les projets à grande échelle de développement de logiciels libres.
 * Trac est une application de gestion complète de projet par Internet, intégrant également le suivi de problèmes, cependant il ne permet pas facilement d'accéder à une communauté telle que celle de GitHub.
 * Redmine est une application de gestion de projets presque complète, mais n'intègre pas les tests unitaires
 
