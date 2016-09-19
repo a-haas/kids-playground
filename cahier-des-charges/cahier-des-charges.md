@@ -231,6 +231,46 @@ GitHub peut être utilisé en tant qu'outil de gestion de projets grâce au syst
 Trac et Redmine sont deux outils de gestion de projets complets mais l'utilisation de ces outils est inadaptée pour le travail, sur un seul projet, d'une petite équipe. Ces outils sont plutôt à l'usage des entreprises qui veulent pouvoir avoir une grande visibilité sur le projet, temps d'avancement, temps prévisionnel / temps requis pour tâche, etc... Ainsi l'outil est même trop complet pour notre utilisation.
 Le bénéfice de travailler avec un outil de gestion de projet complet ne semble donc pas le plus adapté car pour une équipe de trois personnes, une répartition des tâches en utilisant Trello et une discussion Slack afin de se synchroniser sur les différents objectifs, est largement suffisant, en plus des meetings réguliers.
 
+## Planning
+
+|  Semaine | Antoine | Charly | Jason | 
+|----------|:-------:|-------:|------:|
+| 38 | Mise en place de la VM de développement |  |
+| 39 | Rédaction sur la documentation |  |
+| 40 | Apprentissage Django |  |
+| 41 | Apprentissage Django |  |
+| 42 | Mise en place du projet Django (base de données, recherche de librairies complémentaires) |  |
+| 43 | Gestion des utilisateurs et back-office |  |
+| 44 | Front-end design |  |
+| 45 | Front-end design |  |
+| 46 | Gestion des projets (création, mise à jour, etc...) |  |
+| 47 | Ecriture de tests, mise en place des tests |  |
+| 48 | Débogage, peaufinage |  |
+| 49 | Rédaction rapport |  |
+| 50 | Rendu rapport + mise en place du planning pour les prochaines sessions |  |
+| 51 |  |  |
+| 52 |  |  |
+| 01 |  |  |
+| 02 |  |  |
+| 03 |  |  |
+| 04 |  |  |
+| 05 |  |  |
+| 06 |  |  |
+| 07 |  |  |
+| 08 |  |  |
+| 09 |  |  |
+| 10 |  |  |
+| 11 |  |  |
+| 12 |  |  |
+| 13 |  |  |
+| 14 |  |  |
+| 15 |  |  |
+| 16 |  |  |
+| 17 |  |  |
+| 18 |  |  |
+
+Afin d'assurer la cohésion du planning une réunion, physique ou en ligne, sera organisée toutes les deux semaines, voir toutes les semaines en cas de sprint.  
+
 ## A propos
 
 Un cahier des charges n'étant pas figé celui-ci sera amené à être modifié si une fonctionnalité est mise à jour, ajoutée ou supprimée.
