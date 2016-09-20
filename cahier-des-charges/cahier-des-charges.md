@@ -233,43 +233,64 @@ Le bénéfice de travailler avec un outil de gestion de projet complet ne semble
 
 ## Planning
 
-|  Semaine | Antoine | Charly | Jason | 
-|----------|:-------:|-------:|------:|
-| 38 | Mise en place de la VM de développement |  |
-| 39 | Rédaction sur la documentation |  |
-| 40 | Apprentissage Django |  |
-| 41 | Apprentissage Django |  |
-| 42 | Mise en place du projet Django (base de données, recherche de librairies complémentaires) |  |
-| 43 | Gestion des utilisateurs et back-office |  |
-| 44 | Front-end design |  |
-| 45 | Front-end design |  |
-| 46 | Gestion des projets (création, mise à jour, etc...) |  |
-| 47 | Ecriture de tests, mise en place des tests |  |
-| 48 | Débogage, peaufinage |  |
-| 49 | Rédaction rapport |  |
-| 50 | Rendu rapport + mise en place du planning pour les prochaines sessions |  |
-| 51 |  |  |
-| 52 |  |  |
-| 01 |  |  |
-| 02 |  |  |
-| 03 |  |  |
-| 04 |  |  |
-| 05 |  |  |
-| 06 |  |  |
-| 07 |  |  |
-| 08 |  |  |
-| 09 |  |  |
-| 10 |  |  |
-| 11 |  |  |
-| 12 |  |  |
-| 13 |  |  |
-| 14 |  |  |
-| 15 |  |  |
-| 16 |  |  |
-| 17 |  |  |
-| 18 |  |  |
+<!-- Written in HTML cause it's easier to manage and have custom display -->
+<table>
+<thead>
+<tr>
+  <th>Semaine</th>
+  <th align="center">Antoine</th>
+  <th align="center">Charly</th>
+  <th align="center">Jason</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Septembre</td>
+  <!-- Antoine -->
+  <td align="left">Mise en place de la VM de développement
+    <br>Rédaction de la documentation des outils (chef de projet)</td>
+  <!-- Charly -->
+  <td align="left">Prise en main ScratchJr
+    <br>Etude et apprentissage des librairies de gestion de blocks</td>
+  <!-- Jason -->
+  <td align="left">Rédaction d’un tutoriel interactif de première utilisation</td>
+</tr>
+<tr>
+  <td>Octobre</td>
+  <!-- Antoine -->
+  <td align="left">Apprentissage de Django
+    <br>Mise en place du projet (base de données, etc…) et gestion des utilisateurs
+    <br>Front-end design</td>
+  <!-- Charly -->
+  <td align="left">Etude et apprentissage des librairies de gestion de blocks
+    <br>Mise en place des différentes zones (décor, blocs, code)
+    <br>Définition des priorités pour les fonctionnalités de bases de ScratchJR et développement</td>
+  <!-- Jason -->
+  <td align="left">Rédaction des exercices (déplacement, affichage de texte, boucles, conditions)
+    <br>Apprentissage des librairies de gestion de blocs</td>
+</tr>
+<tr>
+  <td>Novembre</td>
+  <!-- Antoine -->
+  <td align="left">Front-end design
+    <br>Gestion des projets des utilisateurs (création, mise à jour, suppression)
+    <br>Débogage et peaufinage de l’application en vue du rendu
+    <br>Début d’écriture du rapport</td>
+  <!-- Charly -->
+  <td align="left">Développement des blocks de bases</td>
+  <!-- Jason -->
+  <td align="left">Début d’implémentation des exercices (ordre à définir)</td>
+</tr>
+<tr>
+  <td>Décembre</td>
+  <!-- The three of us -->
+  <td align="left" colspan="3">Rédaction du rapport et du rendu
+    <br>Une fois le rendu réalisé mise en place du planning pour les mois suivants</td>
+</tr>
+</tbody></table>
 
-Afin d'assurer la cohésion du planning une réunion, physique ou en ligne, sera organisée toutes les deux semaines, voir toutes les semaines en cas de sprint.  
+Afin d'assurer la cohésion du planning une réunion, physique ou en ligne, sera organisée toutes les deux semaines, voir toutes les semaines en cas de sprint.
+
+Le planning est défini jusqu'au premier rendu afin d'être plus flexible par la suite et pouvoir s'adapter plus facilement au retard ou réalisation plus critique de certaines fonctionnalités.
 
 ## A propos
 
