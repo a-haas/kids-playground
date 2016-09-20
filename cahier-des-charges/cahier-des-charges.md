@@ -250,7 +250,7 @@ Le bénéfice de travailler avec un outil de gestion de projet complet ne semble
     <br>Rédaction de la documentation des outils (chef de projet)</td>
   <!-- Charly -->
   <td align="left">Prise en main ScratchJr
-    <br>Etude et apprentissage des librairies de gestion de blocks</td>
+    <br>Etude et apprentissage des librairies de gestion de blocs</td>
   <!-- Jason -->
   <td align="left">Rédaction d’un tutoriel interactif de première utilisation</td>
 </tr>
@@ -261,7 +261,7 @@ Le bénéfice de travailler avec un outil de gestion de projet complet ne semble
     <br>Mise en place du projet (base de données, etc…) et gestion des utilisateurs
     <br>Front-end design</td>
   <!-- Charly -->
-  <td align="left">Etude et apprentissage des librairies de gestion de blocks
+  <td align="left">Etude et apprentissage des librairies de gestion de blocs
     <br>Mise en place des différentes zones (décor, blocs, code)
     <br>Définition des priorités pour les fonctionnalités de bases de ScratchJR et développement</td>
   <!-- Jason -->
@@ -276,7 +276,7 @@ Le bénéfice de travailler avec un outil de gestion de projet complet ne semble
     <br>Débogage et peaufinage de l’application en vue du rendu
     <br>Début d’écriture du rapport</td>
   <!-- Charly -->
-  <td align="left">Développement des blocks de bases</td>
+  <td align="left">Développement des blocs de bases</td>
   <!-- Jason -->
   <td align="left">Début d’implémentation des exercices (ordre à définir)</td>
 </tr>
@@ -290,7 +290,7 @@ Le bénéfice de travailler avec un outil de gestion de projet complet ne semble
 
 Afin d'assurer la cohésion du planning une réunion, physique ou en ligne, sera organisée toutes les deux semaines, voir toutes les semaines en cas de sprint.
 
-Le planning est défini jusqu'au premier rendu afin d'être plus flexible par la suite et pouvoir s'adapter plus facilement au retard ou réalisation plus critique de certaines fonctionnalités.
+Le planning est défini jusqu'au premier rendu afin d'être plus flexible par la suite et pouvoir s'adapter plus facilement au retard ou aux réalisations plus critiques de certaines fonctionnalités.
 
 ## A propos
 
