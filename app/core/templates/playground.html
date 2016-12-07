@@ -10,7 +10,9 @@
 {% block header %}{% endblock %}
 
 {% block content %}
-<div id="playground" class="flex-vertical">	
+<div id="blockly" style="position: absolute"></div>
+
+ <div id="playground" class="flex-vertical">	
 	<header id="playground-header">
 		<h1 id="logo"><a href="{% url 'home' %}">
 			<i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -26,8 +28,7 @@
 	<div class="flex-horizontal">
 	{% block blockzone %}
 	<div id="blockzone">
-		<input type="search" placeholder="Recherche d'un bloc" />
-		<p>Zone de recherche des blocks</p>
+		<button id="run">Run code</button>
 	</div>
 	{% endblock %}
 
@@ -40,11 +41,28 @@
 
 	{% block code %}
 	<div id="code">
-		Zone d'empilement des blocks
 	</div>
 	{% endblock %}
 </div>
+
+<xml id="toolbox">
+  <block type="controls_if"></block>
+  <block type="controls_repeat_ext"></block>
+  <block type="logic_compare"></block>
+  <block type="math_number"></block>
+  <block type="math_arithmetic"></block>
+  <block type="text"></block>
+  <block type="text_print"></block>
+</xml>
 {% endblock %}
 
 {% block footer %}
+{% endblock %}
+
+{% block additionaljs %}
+<script src="{% static 'js/blockly/blockly_compressed.js' %}"></script>
+<script src="{% static 'js/blockly/blocks_compressed.js' %}"></script>
+<script src="{% static 'js/blockly/javascript_compressed.js' %}"></script>
+<script src="{% static 'js/blockly/msg/fr.js' %}"></script>
+<script src="{% static 'js/playground.js' %}"></script>
 {% endblock %}
