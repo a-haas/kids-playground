@@ -1,0 +1,12 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <block type="start"></block>
+  <block type="forward">
+    <field name="steps">1</field>
+  </block>
+  <block type="backward">
+    <field name="steps">1</field>
+  </block>
+  <block type="speak">
+    <field name="speech">Je m'appelle...</field>
+  </block>
+</xml>
