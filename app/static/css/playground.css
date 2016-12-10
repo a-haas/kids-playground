@@ -1,0 +1,76 @@
+html, body, #page-wrapper, #playground{
+	height: 100%;
+	width: 100%;
+}
+
+/*
+ * FLEX DESIGN
+ */
+
+.flex-vertical{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+#playground-header{
+	background-color: white;
+	color: #7c8081;
+}
+#code{
+	margin-top: auto;
+	flex: 2;
+}
+
+.flex-horizontal{
+	display: flex;
+	margin-bottom: auto;
+	flex: 3;
+}
+#blockzone{
+	order: 1;
+	flex: 1 auto;
+	height: 100%;
+}
+#display{
+	order: 2;
+	flex: 3 0px;
+	height: 100%;
+}
+
+/*
+ * HEADER
+ */
+#nav{
+	text-align: center;
+}
+
+/*
+ * BLOCK ZONE DESIGN
+ */
+#blockzone{
+	/*border*/
+	border-style: solid;
+	border-width: 0 5px 0 0;
+	border-color: black;
+	/*spacing*/
+	padding: 1em;
+}
+
+/*
+ * DISPLAY ZONE
+ */
+#display{
+	padding: 1em;
+}
+
+/*
+ * CODING ZONE
+ */
+#code{
+	/*border*/
+	border-style: solid;
+	border-width: 5px 0 0 0;
+	border-color: black;
+	/*spacing*/
+	padding: 1em;
+}
