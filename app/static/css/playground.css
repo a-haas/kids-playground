@@ -74,3 +74,10 @@ html, body, #page-wrapper, #playground{
 	/*spacing*/
 	padding: 1em;
 }
+
+#character{
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	cursor: move;
+}

@@ -57,3 +57,6 @@ $("#run").click(function(){
 	var code = Blockly.JavaScript.workspaceToCode(workspace);
 	eval(code);
 });
+
+/* set the character to be drawable */
+$("#character").draggable();
