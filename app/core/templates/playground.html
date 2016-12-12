@@ -10,7 +10,9 @@
 {% block header %}{% endblock %}
 
 {% block content %}
-<div id="playground" class="flex-vertical">	
+<div id="blockly" style="position: absolute"></div>
+
+ <div id="playground" class="flex-vertical">	
 	<header id="playground-header">
 		<h1 id="logo"><a href="{% url 'home' %}">
 			<i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -19,6 +21,7 @@
 		<nav id="nav">
 			<ul>
 				<li>Terrain de jeu</li>
+				<li><button id="run">Run code</button></li>
 			</ul>
 		</nav>
 	</header>
@@ -26,25 +29,52 @@
 	<div class="flex-horizontal">
 	{% block blockzone %}
 	<div id="blockzone">
-		<input type="search" placeholder="Recherche d'un bloc" />
-		<p>Zone de recherche des blocks</p>
+
 	</div>
 	{% endblock %}
 
 	{% block display %}
 	<div id="display">
-		Zone d'affichage
+		<div id="character"></div>
 	</div>
 	{% endblock %}
 	</div>
 
 	{% block code %}
 	<div id="code">
-		Zone d'empilement des blocks
 	</div>
 	{% endblock %}
 </div>
+
+<!-- define toolbox -->
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <block type="start"></block>
+  <block type="forward">
+    <field name="steps">1</field>
+  </block>
+  <block type="backward">
+    <field name="steps">1</field>
+  </block>
+  <block type="speak">
+    <field name="speech">Je m'appelle...</field>
+  </block>
+</xml>
+<!-- starting blocks -->
+<xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
+  <block type="start" id="mgyXi`vj*zVK4VKGtpSh" x="188" y="163"></block>
+</xml>
 {% endblock %}
 
 {% block footer %}
+{% endblock %}
+
+{% block additionaljs %}
+<script src="{% static 'js/jquery-ui/jquery-ui.min.js' %}"></script>
+<script src="{% static 'blockly/blockly_compressed.js' %}"></script>
+<script src="{% static 'blockly/blocks_compressed.js' %}"></script>
+<script src="{% static 'blockly/blocks.js' %}"></script>
+<script src="{% static 'blockly/javascript_compressed.js' %}"></script>
+<script src="{% static 'blockly/blocks-to-js.js' %}"></script>
+<script src="{% static 'blockly/msg/fr.js' %}"></script>
+<script src="{% static 'blockly/workspace.js' %}"></script>
 {% endblock %}
