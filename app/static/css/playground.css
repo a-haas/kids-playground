@@ -1,0 +1,119 @@
+html, body, #page-wrapper, #playground{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+/*
+ * FLEX DESIGN
+ */
+
+.flex-vertical{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+#playground-header{
+	background-color: white;
+	color: #7c8081;
+}
+#code{
+	margin-top: auto;
+	flex: 2;
+}
+
+.flex-horizontal{
+	display: flex;
+	margin-bottom: auto;
+	flex: 3;
+}
+#blockzone{
+	order: 1;
+	flex: 1 auto;
+	height: 100%;
+}
+#display{
+	order: 2;
+	flex: 3 0px;
+	height: 100%;
+}
+
+/*
+ * HEADER
+ */
+#header {
+	background: #fff;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+	color: inherit;
+	cursor: default;
+	font-size: 0.8em;
+	left: 0;
+	padding: 1em 1.5em;
+	top: 0;
+	width: 100%;
+	position: relative;
+}
+#logo{
+	display: inline-block;
+}
+#header nav {
+	width: 100%;
+	display: inline-block;
+	letter-spacing: 0.075em;
+	position: relative;
+	text-transform: uppercase;
+	top: 0.75em;
+}
+#header .nav-right{
+	float: right;
+}
+
+/*
+ * BLOCK ZONE DESIGN
+ */
+#blockzone{
+	/*border*/
+	border-style: solid;
+	border-width: 0 2px 0 0;
+	border-color: black;
+	/*spacing*/
+	padding: 1em;
+}
+
+/*
+ * DISPLAY ZONE
+ */
+#display{
+	padding: 0;
+}
+
+/*
+ * CODING ZONE
+ */
+#code{
+	/*border*/
+	border-style: solid;
+	border-width: 2px 0 0 0;
+	border-color: black;
+	/*spacing*/
+	padding: 1em;
+}
+
+#character{
+	min-height: 100px;
+	width: 100px;
+	max-width: 100%;
+	background-color: red;
+	cursor: move;
+}
+#speech{
+	position: fixed;
+	display: none;
+	padding: 5px;
+	width: 100%;
+	background-color: white; 
+	color: black;
+	border: solid 1px;
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+	z-index: 2;
+}
