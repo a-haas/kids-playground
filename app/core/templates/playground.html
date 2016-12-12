@@ -7,25 +7,29 @@
 <link rel="stylesheet" href="{% static 'css/playground.css' %}" />
 {% endblock %}
 
-{% block header %}{% endblock %}
+{% block header %}
+{% endblock %}
 
 {% block content %}
 <div id="blockly" style="position: absolute"></div>
 
  <div id="playground" class="flex-vertical">	
-	<header id="playground-header">
-		<h1 id="logo"><a href="{% url 'home' %}">
-			<i class="fa fa-arrow-left" aria-hidden="true"></i>
-			KIDS(PLAYGROUND);</a>
-		</h1>
-		<nav id="nav">
-			<ul>
-				<li>Terrain de jeu</li>
-				<li><button id="run">Run code</button></li>
-			</ul>
-		</nav>
-	</header>
-
+ <header id="header">
+	<nav id="nav">
+		<ul>
+			<li><h1 id="logo"><a href="{% url 'home' %}">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> KIDS(PLAYGROUND);
+			</a></h1></li>
+			<li>Terrain de jeu</li>
+			<li class="nav-right"><button id="reset">
+				<i class="fa fa-eraser" aria-hidden="true"></i>
+			</button></li>
+			<li class="nav-right"><button id="run">
+				<i class="fa fa-flag-checkered" aria-hidden="true"></i>	
+			</button></li>
+		</ul>
+	</nav>
+</header>
 	<div class="flex-horizontal">
 	{% block blockzone %}
 	<div id="blockzone">
@@ -35,6 +39,7 @@
 
 	{% block display %}
 	<div id="display">
+		<div id="speech"></div>
 		<div id="character"></div>
 	</div>
 	{% endblock %}
