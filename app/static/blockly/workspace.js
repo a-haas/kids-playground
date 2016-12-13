@@ -54,9 +54,46 @@ Blockly.svgResize(workspace);
 
 /* execute the associated code */
 $("#run").click(function(){
-	var code = Blockly.JavaScript.workspaceToCode(workspace);
-	eval(code);
+	/* first hide current speech block */
+	$("#speech").hide("slow", function(){
+		/* fire it as a callback */
+		var code = Blockly.JavaScript.workspaceToCode(workspace);
+		eval(code);
+	});
 });
 
-/* set the character to be drawable */
-$("#character").draggable();
+$("#reset").click(function(){
+	/* first hide text */
+	$("#speech").hide("slow", function(){
+		/* TODO */
+
+		/*var leftpos = $("#character").position().left - $("#display").position().left;
+		var toppos = $("#character").position().top - $("#display").position().top;
+		// go to left first
+		$( "#character" ).animate({
+			left: "-= " + leftpos
+		}, {
+			duration: 500,
+		});
+		$( "#character" ).animate({
+			top: "-=" + toppos
+		}, {
+			duration: 500,
+		});
+		// then to the top
+		$( "#character" ).animate({
+			left: "-= " + leftpos
+		}, {
+			duration: 500,
+		});*/
+	});
+});
+
+/* set the character to be draggable */
+$("#character").draggable({
+	revert: "invalid"
+});
+/* if the character is dropped in other place then came back to initial place */
+$("#display").droppable({
+
+});
