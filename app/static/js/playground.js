@@ -2,7 +2,6 @@
 // handle webcam
 // Grab elements, create settings, etc.
 $("#camera").click(function (){
-	alert("toto");
 	var video = document.getElementById('webcam');
 	// Get access to the camera!
 	if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -12,4 +11,17 @@ $("#camera").click(function (){
 	        video.play();
 	    });
 	}
+});
+
+// Elements for taking the snapshot
+var canvas = document.getElementById('character-picture');
+var context = canvas.getContext('2d');
+var video = document.getElementById('webcam');
+
+// Trigger photo take
+$("#trigger-camera").click(function(){
+	var w = video.offsetWidth;
+	var h = video.offsetHeight;
+	context.drawImage(video, 0, 0, w, h);
+	window.location = "#close-camera";
 });

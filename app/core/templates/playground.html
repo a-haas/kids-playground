@@ -44,7 +44,7 @@
 	<div id="display">
 		<div id="speech"></div>
 		<div id="character">
-			<video autoplay id="webcam"></video>
+			<canvas id="character-picture"></canvas>
 		</div>
 	</div>
 	{% endblock %}
@@ -59,9 +59,11 @@
 <div id="modal-camera" class="modalDialog">
 	<div>
 		<a href="#close-modal" title="Close" class="close">X</a>
-		<h2>Modal Box</h2>
-		<p>This is a sample modal box that can be created using the powers of CSS3.</p>
-		<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+		<h2>Webcam</h2>
+		<video autoplay id="webcam"></video>
+		<button id="trigger-camera">
+			<i class="fa fa-camera" aria-hidden="true"></i>
+		</button>
 	</div>
 </div>
 
