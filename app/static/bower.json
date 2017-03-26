@@ -1,0 +1,9 @@
+{
+	"name" : "kidsplayground",
+	"dependencies" :  {
+		"fontawesome" : "latest",
+		"jquery" : "latest",
+		"normalize" : "latest",
+		"material-design-lite" : "latest"
+	}
+}

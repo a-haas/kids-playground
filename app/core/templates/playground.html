@@ -27,6 +27,9 @@
 			<li class="nav-right"><button id="run">
 				<i class="fa fa-flag-checkered" aria-hidden="true"></i>	
 			</button></li>
+			<li class="nav-right"><a href="#modal-camera"><button id="camera">
+				<i class="fa fa-camera" aria-hidden="true"></i>
+			</button></a></li>
 		</ul>
 	</nav>
 </header>
@@ -40,7 +43,9 @@
 	{% block display %}
 	<div id="display">
 		<div id="speech"></div>
-		<div id="character"></div>
+		<div id="character">
+			<video autoplay id="webcam"></video>
+		</div>
 	</div>
 	{% endblock %}
 	</div>
@@ -51,6 +56,15 @@
 	{% endblock %}
 </div>
 
+<div id="modal-camera" class="modalDialog">
+	<div>
+		<a href="#close-modal" title="Close" class="close">X</a>
+		<h2>Modal Box</h2>
+		<p>This is a sample modal box that can be created using the powers of CSS3.</p>
+		<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+	</div>
+</div>
+
 <!-- define toolbox -->
 <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
   <block type="start"></block>
@@ -59,6 +73,15 @@
   </block>
   <block type="backward">
     <field name="steps">1</field>
+  </block>
+  <block type="up">
+    <field name="steps">1</field>
+  </block>
+  <block type="bottom">
+    <field name="steps">1</field>
+  </block>
+  <block type="loop">
+    <field name="nb_iter">1</field>
   </block>
   <block type="speak">
     <field name="speech">Je m'appelle...</field>
@@ -82,4 +105,5 @@
 <script src="{% static 'blockly/blocks-to-js.js' %}"></script>
 <script src="{% static 'blockly/msg/fr.js' %}"></script>
 <script src="{% static 'blockly/workspace.js' %}"></script>
+<script src="{% static 'js/playground.js' %}"></script>
 {% endblock %}
