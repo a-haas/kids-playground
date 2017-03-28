@@ -6,9 +6,9 @@ L'ordre des étapes proposées n'est pas définitif et peut évoluer en fonction
 
 | Type du jalon |                 Roadmap                  | Pourcentage d'avancement |
 | :-----------: | :--------------------------------------: | :----------------------: |
-| Apprentissage | Découverte et compréhension du framework, ainsi que du modèle MVC. Cf. tutoriaux Openclassrooms, DjangoGirls, autres |            0%            |
-| Apprentissage | Apprentissage de la gestion d'un projet Django (mise à jour du serveur, de la base de données, etc...) Voir tutoriaux |            0%            |
-| Apprentissage | Comprendre le mécanisme de connexion et de gestions des utilisateurs au sein de Django |            0%            |
+| Apprentissage | Découverte et compréhension du framework, ainsi que du modèle MVC. Cf. tutoriaux Openclassrooms, DjangoGirls, autres |            100%            |
+| Apprentissage | Apprentissage de la gestion d'un projet Django (mise à jour du serveur, de la base de données, etc...) Voir tutoriaux |            100%            |
+| Apprentissage | Comprendre le mécanisme de connexion et de gestions des utilisateurs au sein de Django |            1%            |
 |   Existant    | Comprendre le système d'authentification déjà existant |            0%            |
 |  Conception   | Ajout d'utilisateurs au sein du framework Django, voir les librairies/fonctionnalités déjà existantes au sein de la communauté |            0%            |
 |      Dev      |           Création d'un compte           |            0%            |
