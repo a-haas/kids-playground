@@ -29,7 +29,7 @@ var workspace = Blockly.inject(blocklyDiv, options);
 var workspaceBlocks = document.getElementById("workspaceBlocks"); 
 
 /* Load blocks to workspace. */
-Blockly.Xml.domToWorkspace(workspace, workspaceBlocks);
+Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
 
 /* place workspace */
 var onresize = function(e) {
@@ -58,7 +58,13 @@ $("#run").click(function(){
 	$("#speech").hide("slow", function(){
 		/* fire it as a callback */
 		var code = Blockly.JavaScript.workspaceToCode(workspace);
-		eval(code);
+		try {
+			eval(code);
+			// passed the test, now what...
+		} catch (e) {
+		    // failed so show the error
+		    alert(e);
+		}
 	});
 });
 
@@ -94,6 +100,4 @@ $("#character").draggable({
 	revert: "invalid"
 });
 /* if the character is dropped in other place then came back to initial place */
-$("#display").droppable({
-
-});
+$("#display").droppable({});

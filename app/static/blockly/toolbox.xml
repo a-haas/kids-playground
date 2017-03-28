@@ -6,6 +6,15 @@
   <block type="backward">
     <field name="steps">1</field>
   </block>
+  <block type="up">
+    <field name="steps">1</field>
+  </block>
+  <block type="bottom">
+    <field name="steps">1</field>
+  </block>
+  <block type="loop">
+    <field name="nb_iter">1</field>
+  </block>
   <block type="speak">
     <field name="speech">Je m'appelle...</field>
   </block>
