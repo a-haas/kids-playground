@@ -22,6 +22,7 @@ var options = {
 
 /* Inject your workspace */ 
 var workspace = Blockly.inject(blocklyDiv, options);
+workspace.addChangeListener(Blockly.Events.disableOrphans);
 
 /* Load Workspace Blocks from XML to workspace. Remove all code below if no blocks to load */
 

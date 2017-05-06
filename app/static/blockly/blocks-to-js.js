@@ -65,7 +65,7 @@ Blockly.JavaScript['up'] = function(block) {
 };
 
 Blockly.JavaScript['bottom'] = function(block) {
-  var number_steps = block.getFieldValue('steps');
+    var number_steps = block.getFieldValue('steps');
     var newpos = basicstep*number_steps;
     var code = 
         '$( "#character" ).animate({' +
@@ -75,4 +75,10 @@ Blockly.JavaScript['bottom'] = function(block) {
         '});'
     ;
     return code;
+};
+
+Blockly.JavaScript['audio'] = function(block) {
+  var dropdown_track = block.getFieldValue('track');
+  var code = 'document.getElementById("'+ dropdown_track +'").play()';
+  return code;
 };

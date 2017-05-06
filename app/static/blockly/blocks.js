@@ -93,3 +93,16 @@ Blockly.Blocks['bottom'] = {
     this.setHelpUrl('');
   }
 };
+
+Blockly.Blocks['audio'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("♫")
+        .appendField(new Blockly.FieldDropdown([["akak","AKAK_TRACK"]]), "track");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};

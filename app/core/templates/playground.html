@@ -30,13 +30,15 @@
 			<li class="nav-right"><a href="#modal-camera"><button id="camera">
 				<i class="fa fa-camera" aria-hidden="true"></i>
 			</button></a></li>
+			<li class="nav-right"><button id="microphone">
+				<i class="fa fa-microphone" aria-hidden="true"></i>
+			</button></li>
 		</ul>
 	</nav>
 </header>
 	<div class="flex-horizontal">
 	{% block blockzone %}
 	<div id="blockzone">
-
 	</div>
 	{% endblock %}
 
@@ -88,11 +90,17 @@
   <block type="speak">
     <field name="speech">Je m'appelle...</field>
   </block>
+  <block type="audio">
+    <field name="track">AKAK_TRACK</field>
+  </block>
 </xml>
 <!-- starting blocks -->
 <xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
   <block type="start" id="mgyXi`vj*zVK4VKGtpSh" x="188" y="163"></block>
 </xml>
+
+<!-- The list of audio tracks (TODO : CREATE IT PROGRAMMATICALLY) -->
+<audio id="AKAK_TRACK" src="{% static 'audio/akak_track.mp3' %}"></audio>
 {% endblock %}
 
 {% block footer %}

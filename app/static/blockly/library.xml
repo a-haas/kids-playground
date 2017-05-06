@@ -269,4 +269,43 @@
         <field name="HUE">230</field>
       </block>
     </value>
+  </block><block type="factory_base" id="%D(6pudh*oHk!uqS7+%K" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">audio</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="H`{qEdJGbUZK7mm{YXF+">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="T!x5R}Q,Pcd1Xs(+il~v">
+            <field name="TEXT">♫</field>
+            <next>
+              <block type="field_dropdown" id="bf~152@rcca4$J|OdjZb">
+                <mutation options="[&quot;text&quot;]"></mutation>
+                <field name="FIELDNAME">track</field>
+                <field name="USER0">akak</field>
+                <field name="CPU0">AKAK_TRACK</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="J8uw)PjL%d~$6jlA*cd3" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="-+GDvLMW@6j@G_#]iwf)" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=")M=?/8YCoNvcaWA$rG%9">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
   </block></xml>

@@ -18,4 +18,7 @@
   <block type="speak">
     <field name="speech">Je m'appelle...</field>
   </block>
+  <block type="audio">
+    <field name="track">AKAK_TRACK</field>
+  </block>
 </xml>
