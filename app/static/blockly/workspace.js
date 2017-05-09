@@ -10,7 +10,7 @@ var options = {
 	disable : false, 
 	maxBlocks : Infinity, 
 	trashcan : true, 
-	horizontalLayout : false, 
+	horizontalLayout : true, 
 	toolboxPosition : 'start', 
 	css : true, 
 	media : 'https://blockly-demo.appspot.com/static/media/', 
@@ -22,6 +22,7 @@ var options = {
 
 /* Inject your workspace */ 
 var workspace = Blockly.inject(blocklyDiv, options);
+workspace.addChangeListener(Blockly.Events.disableOrphans);
 
 /* Load Workspace Blocks from XML to workspace. Remove all code below if no blocks to load */
 
@@ -29,7 +30,7 @@ var workspace = Blockly.inject(blocklyDiv, options);
 var workspaceBlocks = document.getElementById("workspaceBlocks"); 
 
 /* Load blocks to workspace. */
-Blockly.Xml.domToWorkspace(workspace, workspaceBlocks);
+Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
 
 /* place workspace */
 var onresize = function(e) {
@@ -58,7 +59,13 @@ $("#run").click(function(){
 	$("#speech").hide("slow", function(){
 		/* fire it as a callback */
 		var code = Blockly.JavaScript.workspaceToCode(workspace);
-		eval(code);
+		try {
+			eval(code);
+			// passed the test, now what...
+		} catch (e) {
+		    // failed so show the error
+		    alert(e);
+		}
 	});
 });
 
@@ -90,10 +97,8 @@ $("#reset").click(function(){
 });
 
 /* set the character to be draggable */
-$("#character").draggable({
+$("#draggable-character").draggable({
 	revert: "invalid"
 });
 /* if the character is dropped in other place then came back to initial place */
-$("#display").droppable({
-
-});
+$("#display").droppable({});

@@ -13,8 +13,7 @@
 {% block content %}
 <div id="blockly" style="position: absolute"></div>
 
- <div id="playground" class="flex-vertical">	
- <header id="header">
+<header id="header">
 	<nav id="nav">
 		<ul>
 			<li><h1 id="logo"><a href="{% url 'home' %}">
@@ -27,29 +26,94 @@
 			<li class="nav-right"><button id="run">
 				<i class="fa fa-flag-checkered" aria-hidden="true"></i>	
 			</button></li>
+			<li class="nav-right"><a href="#modal-camera"><button id="camera">
+				<i class="fa fa-camera" aria-hidden="true"></i>
+			</button></a></li>
+			<li class="nav-right"><a href="#modal-pictures"><button id="microphone">
+				<i class="fa fa-picture-o" aria-hidden="true"></i>
+			</button></a></li>
 		</ul>
 	</nav>
 </header>
-	<div class="flex-horizontal">
-	{% block blockzone %}
-	<div id="blockzone">
-
-	</div>
+<div class="columns">
+	{% block code %}
+	<div id="code"></div>
 	{% endblock %}
 
 	{% block display %}
 	<div id="display">
-		<div id="speech"></div>
-		<div id="character"></div>
-	</div>
-	{% endblock %}
-	</div>
-
-	{% block code %}
-	<div id="code">
+		<div id="draggable-character">
+			<div id="speech"><p id="speech-text"></p><div id="bubble-arrow"></div></div>
+			<div id="character">
+				<canvas id="character-picture"></canvas>
+			</div>
+		</div>
 	</div>
 	{% endblock %}
 </div>
+
+<div id="modal-camera" class="modalDialog">
+	<div>
+		<a href="#close-modal" title="Close" class="close">X</a>
+		<h2>Webcam</h2>
+		<video autoplay id="webcam" class=""></video>
+		<button id="trigger-camera">
+			<i class="fa fa-camera" aria-hidden="true"></i>
+		</button>
+		<button id="trigger-filter-classic">
+			Classique
+		</button>
+		<button id="trigger-filter-grayscale">
+			Echelle de gris
+		</button>
+		<button id="trigger-filter-sepia">
+			Sépia
+		</button>
+		<button id="trigger-filter-blur">
+			Flou
+		</button>
+	</div>
+</div>
+
+<div id="modal-pictures" class="modalDialog">
+	<div>
+	<a href="#close-modal" title="Close" class="close">X</a>
+	<h3>Choisissez une image</h3>
+	<ul class="gallery">
+	     <li>
+	          <a href="#" class="gallery-picture">
+	          <img src="{% static 'pictures/car-1.png' %}" alt="" />
+	          </a>
+	     </li>
+	     <li>
+	          <a href="#" class="gallery-picture">
+	          <img src="{% static 'pictures/car-2.png' %}" alt="" />
+	          </a>
+	     </li>
+	     <li>
+	          <a href="#" class="gallery-picture">
+	          <img src="{% static 'pictures/car-3.png' %}" alt="" />
+	          </a>
+	     </li>
+	     <li>
+	          <a href="#" class="gallery-picture">
+	          <img src="{% static 'pictures/cat-1.png' %}" alt="" />
+	          </a>
+	     </li>
+	     <li>
+	          <a href="#" class="gallery-picture">
+	          <img src="{% static 'pictures/cat-2.png' %}" alt="" />
+	          </a>
+	     </li>
+	     <li>
+	          <a href="#" class="gallery-picture">
+	          <img src="{% static 'pictures/cat-3.png' %}" alt="" />
+	          </a>
+	     </li>
+	</ul>
+	</div>
+</div>
+
 
 <!-- define toolbox -->
 <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
@@ -60,14 +124,36 @@
   <block type="backward">
     <field name="steps">1</field>
   </block>
+  <block type="up">
+    <field name="steps">1</field>
+  </block>
+  <block type="bottom">
+    <field name="steps">1</field>
+  </block>
+  <block type="loop">
+    <field name="nb_iter">1</field>
+  </block>
   <block type="speak">
     <field name="speech">Je m'appelle...</field>
+  </block>
+  <block type="audio">
+    <field name="track">AKAK_TRACK</field>
   </block>
 </xml>
 <!-- starting blocks -->
 <xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
-  <block type="start" id="mgyXi`vj*zVK4VKGtpSh" x="188" y="163"></block>
+  <block type="start" id="mgyXi`vj*zVK4VKGtpSh" x="-100" y="163"></block>
 </xml>
+
+<!-- The list of audio tracks (TODO : CREATE IT PROGRAMMATICALLY) -->
+<audio id="AKAK_TRACK" src="{% static 'audio/akak_track.mp3' %}"></audio>
+<audio id="CAT_TRACK_1" src="{% static 'audio/cat_track_1.mp3' %}"></audio>
+<audio id="CAT_TRACK_2" src="{% static 'audio/cat_track_2.mp3' %}"></audio>
+<audio id="CAT_TRACK_3" src="{% static 'audio/cat_track_3.mp3' %}"></audio>
+<audio id="CAT_TRACK_4" src="{% static 'audio/cat_track_4.mp3' %}"></audio>
+<audio id="CAR_TRACK_1" src="{% static 'audio/car_track_1.mp3' %}"></audio>
+<audio id="CAR_TRACK_2" src="{% static 'audio/car_track_2.mp3' %}"></audio>
+<audio id="CAR_TRACK_3" src="{% static 'audio/car_track_3.mp3' %}"></audio>
 {% endblock %}
 
 {% block footer %}
@@ -82,4 +168,5 @@
 <script src="{% static 'blockly/blocks-to-js.js' %}"></script>
 <script src="{% static 'blockly/msg/fr.js' %}"></script>
 <script src="{% static 'blockly/workspace.js' %}"></script>
+<script src="{% static 'js/playground.js' %}"></script>
 {% endblock %}
