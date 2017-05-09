@@ -10,7 +10,7 @@ var options = {
 	disable : false, 
 	maxBlocks : Infinity, 
 	trashcan : true, 
-	horizontalLayout : false, 
+	horizontalLayout : true, 
 	toolboxPosition : 'start', 
 	css : true, 
 	media : 'https://blockly-demo.appspot.com/static/media/', 
@@ -97,7 +97,7 @@ $("#reset").click(function(){
 });
 
 /* set the character to be draggable */
-$("#character").draggable({
+$("#draggable-character").draggable({
 	revert: "invalid"
 });
 /* if the character is dropped in other place then came back to initial place */

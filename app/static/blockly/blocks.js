@@ -98,7 +98,7 @@ Blockly.Blocks['audio'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("♫")
-        .appendField(new Blockly.FieldDropdown([["akak","AKAK_TRACK"]]), "track");
+        .appendField(new Blockly.FieldDropdown([["chat 1","CAT_TRACK_1"], ["chat 2","CAT_TRACK_2"], ["chat 3","CAT_TRACK_3"], ["chat 4","CAT_TRACK_4"], ["voiture 1","CAR_TRACK_1"], ["voiture 2","CAR_TRACK_2"], ["voiture 3","CAR_TRACK_3"], ["akak","AKAK_TRACK"]]), "track");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
